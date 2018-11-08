@@ -10,7 +10,7 @@ public class AppTest
 	public void run()
 	{
 		WebDriver d=new ChromeDriver();
-		d.get("https://www.google.com");
+		d.get("https://www.google.com"); {}
 		d.quit();
 	}
 }
