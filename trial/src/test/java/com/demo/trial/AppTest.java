@@ -12,7 +12,7 @@ public class AppTest
 		WebDriver driver= new ChromeDriver();
 		driver.get("https://www.google.com/");
 		System.out.println("Hello Selenium!");
-		driver.close();
+		driver.close(); 
 		
 	}
 	
