@@ -13,6 +13,6 @@ public class AppTest
 		d.get("https://www.google.com"); {}
 		
 		System.out.println("In Testing..This is working.");
-		d.quit()
+		d.quit();
 	}
 }
