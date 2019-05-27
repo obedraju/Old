@@ -19,7 +19,7 @@ public class AppTest
 		d.quit();
 	}
 	@Test
-	static void run(int a)
+	static void run2()
 	{
 		System.out.println("Overleaded m()");
 	}
