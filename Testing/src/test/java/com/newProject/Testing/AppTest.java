@@ -18,4 +18,12 @@ public class AppTest
 		System.out.println("In Testing..This is working. Launching!");
 		d.quit();
 	}
-}
+	@Test
+	static void run(int a)
+	{
+		System.out.println("Overleaded m()");
+	}
+	
+	
+	
+	}
