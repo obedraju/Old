@@ -2,12 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13129" started-at="2018-11-08T11:56:42Z" finished-at="2018-11-08T11:56:55Z">
+  <suite name="Default suite" duration-ms="3859" started-at="2019-08-01T06:46:58Z" finished-at="2019-08-01T06:47:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13129" started-at="2018-11-08T11:56:42Z" finished-at="2018-11-08T11:56:55Z">
+    <test name="Default test" duration-ms="3859" started-at="2019-08-01T06:46:58Z" finished-at="2019-08-01T06:47:02Z">
       <class name="com.demo.trial.AppTest">
-        <test-method status="PASS" signature="run()[pri:0, instance:com.demo.trial.AppTest@38203]" name="run" duration-ms="13087" started-at="2018-11-08T11:56:42Z" finished-at="2018-11-08T11:56:55Z">
+        <test-method status="PASS" signature="Load()[pri:0, instance:com.demo.trial.AppTest@4501b7af]" name="Load" is-config="true" duration-ms="8" started-at="2019-08-01T06:46:58Z" finished-at="2019-08-01T06:46:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Load -->
+        <test-method status="PASS" signature="run()[pri:0, instance:com.demo.trial.AppTest@4501b7af]" name="run" duration-ms="3827" started-at="2019-08-01T06:46:58Z" finished-at="2019-08-01T06:47:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- run -->
