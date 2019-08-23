@@ -55,7 +55,6 @@ public void UserDetails() throws InterruptedException
 {
 	QuestIntraHomeLogin obj1=PageFactory.initElements(driver, QuestIntraHomeLogin.class);
 	obj1.clickUser();
-	
 	EmpProfile obj2=PageFactory.initElements(driver, EmpProfile.class);
 	obj2.printDetails();
 }
