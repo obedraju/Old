@@ -6,10 +6,24 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.testng.Assert;
 
+
+import Utility.PropertyFile;
+
 public class QuestIntraHomeLogin {
 	
 	WebDriver driver; //Declaring the driver
 	
+	static String LoginUser;
+	static String LoginPassword;
+	
+	PropertyFile pf=new PropertyFile();
+	
+	   void LoadingPropertyFile() throws Exception
+	{
+		LoginUser=pf.LoadProperty("LoginUser");
+		LoginPassword=pf.LoadProperty("LoginPassword");
+		
+	}
 	
 	//Using @FindBy declaring the elements of the page for Login
 	
@@ -25,13 +39,17 @@ public class QuestIntraHomeLogin {
 	
 	@FindBy(how=How.XPATH, using="//div[@class=\"username place-left\"]/a") WebElement userTitle;
 	
+	
+	
+	
 	//Actions
-	public void loginAuthentication()
+	public void loginAuthentication() throws Exception
 	{
+		LoadingPropertyFile();
 		username.clear();
-		username.sendKeys("g.obedraju");
+		username.sendKeys(LoginUser);
 		password.clear();
-		password.sendKeys("Quest@100");
+		password.sendKeys(LoginPassword);
 		loginBTN.click();
 		String Logintitle=driver.getTitle();
 		Assert.assertEquals(Logintitle,"Intranet Portal - Home QuEST");
