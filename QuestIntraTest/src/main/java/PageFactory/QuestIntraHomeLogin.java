@@ -43,8 +43,9 @@ public class QuestIntraHomeLogin {
 	
 	
 	//Actions
-	public void loginAuthentication() throws Exception
+	public String loginAuthentication() throws Exception
 	{
+		
 		LoadingPropertyFile();
 		username.clear();
 		username.sendKeys(LoginUser);
@@ -54,6 +55,10 @@ public class QuestIntraHomeLogin {
 		String Logintitle=driver.getTitle();
 		Assert.assertEquals(Logintitle,"Intranet Portal - Home QuEST");
 		System.out.println("Login Successful.");
+		String result="pass";
+		
+		return result;
+		
 		
 	}
 	

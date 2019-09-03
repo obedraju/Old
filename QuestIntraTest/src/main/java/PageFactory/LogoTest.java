@@ -1,9 +1,5 @@
 package PageFactory;
 
-
-
-
-
 import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
@@ -38,6 +34,7 @@ public class LogoTest {
 		
 		{
 			driver.switchTo().window(handle);
+			Thread.sleep(1000);
 			System.out.println(driver.getCurrentUrl());
 			System.out.println(driver.getTitle());
 			System.out.println();

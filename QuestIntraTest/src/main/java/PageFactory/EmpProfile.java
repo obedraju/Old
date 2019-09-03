@@ -25,10 +25,9 @@ public class EmpProfile {
 	{
 		{
 			String text1 = empID.getText();
-			System.out.println("The email id is: " +text1);
+			System.out.println("The EMP ID is: " +text1);
 			driver.navigate().back();
-			Thread.sleep(3000);
-			}
+		}
 		
 	
 		
