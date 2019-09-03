@@ -123,7 +123,7 @@ public class DriverScript extends BasePage{
 		logger.log(Status.PASS, MarkupHelper.createLabel("Home Logo Click Test Sucessfull", ExtentColor.GREEN));
 		
 		
-		
+		{}
 		
 	}
 	
