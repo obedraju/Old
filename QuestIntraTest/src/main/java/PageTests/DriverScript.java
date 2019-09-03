@@ -112,7 +112,7 @@ public class DriverScript extends BasePage{
 		
 		
 		
-	{}
+	
 	
 	@Test(dependsOnMethods = {"HomeViewAllApps" })
 	public void HomeLogoTest() throws InterruptedException
