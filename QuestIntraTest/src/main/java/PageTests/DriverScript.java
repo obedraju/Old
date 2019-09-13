@@ -1,10 +1,13 @@
 package PageTests;
 
+import java.io.IOException;
+
 import org.openqa.selenium.support.PageFactory;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -20,6 +23,7 @@ import PageFactory.EmpProfile;
 import PageFactory.LogoTest;
 import PageFactory.QuestHome;
 import PageFactory.QuestIntraHomeLogin;
+import Utility.ExcelUtil;
 
 
 public class DriverScript extends BasePage{
@@ -34,7 +38,8 @@ public class DriverScript extends BasePage{
 	@BeforeTest
 	 public void startReport(){
 	 
-	 htmlReporter = new ExtentHtmlReporter("//Users/g.obedraju/Downloads/Report/TestOutput.html");
+	String path="./ExtentReportOutput/Report.html";
+	 htmlReporter = new ExtentHtmlReporter(path);
 	 extent = new ExtentReports ();
 	 extent.attachReporter(htmlReporter);
 	 extent.setSystemInfo("Host Name", "Quest_Testing");
@@ -50,64 +55,68 @@ public class DriverScript extends BasePage{
 	@AfterMethod
 	 public void getResult(ITestResult result){
 	 if(result.getStatus() == ITestResult.FAILURE){
-	 //logger.log(Status.FAIL, "Test Case Failed is "+result.getName());
-	 //MarkupHelper is used to display the output in different colors
 	 logger.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " - Test Case Failed", ExtentColor.RED));
 	 logger.log(Status.FAIL, MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.BROWN));
 	 }else if(result.getStatus() == ITestResult.SKIP){
 	 //logger.log(Status.SKIP, "Test Case Skipped is "+result.getName());
 	 logger.log(Status.SKIP, MarkupHelper.createLabel(result.getName() + " - Test Case Skipped", ExtentColor.ORANGE)); 
 	 }
-	 }
+	 } 
 	
 	@AfterTest
-	 public void endReport(){
+	protected void endReport(){
 	 extent.flush();
 	    }
 
-	/*************************************************/
+	/**
+	 * @throws Exception ***********************************************/
+	
+	public void start() throws Exception
+	{
+		LoginAuthentication();
+	}
 	
 	@Test(priority=0)
+	//@Parameters({"key","key2"})
 	public void LoginAuthentication() throws Exception
 	{
 		
 			
 		logger = extent.createTest("LoginAuthentication");
 		QuestIntraHomeLogin obj1=PageFactory.initElements(driver, QuestIntraHomeLogin.class);
-		String result=obj1.loginAuthentication();
-		if(result.equalsIgnoreCase("pass"))
-		{
+		obj1.loginAuthentication();
 		logger.log(Status.PASS, MarkupHelper.createLabel("Login Sucessfull", ExtentColor.GREEN));
-		}
-		else
-		{
-			logger = extent.createTest("failTest");
-			logger.log(Status.PASS, "Test Case (failTest) Status is passed");
-			logger.log(Status.PASS, MarkupHelper.createLabel("Test Case (failTest) Status is passed", ExtentColor.GREEN));
-		}
+		ExcelUtil xl=new ExcelUtil();
+		xl.xlWriteData("LoginAuthentication");
 		
-				
+		
+						
 	}
 	
 	@Test(priority=1)
-	public void LogoutAuthentication()
-	{	logger = extent.createTest("LogoutAuthentication");
+	public void LogoutAuthentication() throws Exception
+	{	
+		logger = extent.createTest("LogoutAuthentication");
 		QuestIntraHomeLogin obj1=PageFactory.initElements(driver, QuestIntraHomeLogin.class);
 		obj1.printUser();
 		obj1.logoutAction();
 		logger.log(Status.PASS, MarkupHelper.createLabel("Logout Sucessfull", ExtentColor.GREEN));
+		ExcelUtil xl=new ExcelUtil();
+		xl.xlWriteData("LogoutAuthentication");
 		
 		
 	}
 	
 	@Test(dependsOnMethods = {"LoginAuthentication" })
-	public void HomeViewAllApps()
+	public void HomeViewAllApps() throws Exception
 	{	
 		
 		logger = extent.createTest("ViewAll");
 		QuestHome obj2=PageFactory.initElements(driver, QuestHome.class);
 		obj2.viewAllBtn();
 		logger.log(Status.PASS, MarkupHelper.createLabel("Clicking ViewAll Sucessfull", ExtentColor.GREEN));
+		ExcelUtil xl=new ExcelUtil();
+		xl.xlWriteData("HomeViewAllApps");
 	} 
 		
 		
@@ -115,25 +124,32 @@ public class DriverScript extends BasePage{
 	
 	
 	@Test(dependsOnMethods = {"HomeViewAllApps" })
-	public void HomeLogoTest() throws InterruptedException
+	public void HomeLogoTest() throws InterruptedException, Exception
 	{
 		logger = extent.createTest("HomeLogo Test");
 		LogoTest obj1=PageFactory.initElements(driver, LogoTest.class);
 		obj1.windowTest();
 		logger.log(Status.PASS, MarkupHelper.createLabel("Home Logo Click Test Sucessfull", ExtentColor.GREEN));
+		ExcelUtil xl=new ExcelUtil();
+		xl.xlWriteData("HomeLogoTest");
 		
 		
-		{}
 		
 	}
 	
 @Test(dependsOnMethods = {"HomeLogoTest"})
-public void UserDetails() throws InterruptedException
+public void UserDetails() throws Exception
 {	logger = extent.createTest("User Details");
 	QuestIntraHomeLogin obj1=PageFactory.initElements(driver, QuestIntraHomeLogin.class);
 	obj1.clickUser();
 	EmpProfile obj2=PageFactory.initElements(driver, EmpProfile.class);
 	obj2.printDetails();
 	logger.log(Status.PASS, MarkupHelper.createLabel("Internal Data Test Sucessfull", ExtentColor.GREEN));
+	ExcelUtil xl=new ExcelUtil();
+	xl.xlWriteData("UserDetails");
 }
+
+
+
+
 }

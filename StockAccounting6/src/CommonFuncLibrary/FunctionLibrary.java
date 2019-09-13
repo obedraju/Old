@@ -387,7 +387,7 @@ public class FunctionLibrary
 			}
 			else
 				if(locatorType.equalsIgnoreCase("name"))
-				{
+				{  
 					WebElement element = driver.findElement(By.name(locatorValue));
 					
 					action.moveToElement(element).perform();

@@ -43,7 +43,7 @@ public class QuestIntraHomeLogin {
 	
 	
 	//Actions
-	public String loginAuthentication() throws Exception
+	public void loginAuthentication() throws Exception 
 	{
 		
 		LoadingPropertyFile();
@@ -55,9 +55,7 @@ public class QuestIntraHomeLogin {
 		String Logintitle=driver.getTitle();
 		Assert.assertEquals(Logintitle,"Intranet Portal - Home QuEST");
 		System.out.println("Login Successful.");
-		String result="pass";
 		
-		return result;
 		
 		
 	}
@@ -79,8 +77,8 @@ public class QuestIntraHomeLogin {
 	{
 		userTitle.click();
 	}
-	
-	
+
+
 	//Will be called with driver
 	public QuestIntraHomeLogin(WebDriver driver)
 	{

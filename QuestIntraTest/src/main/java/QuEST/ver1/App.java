@@ -1,13 +1,17 @@
 package QuEST.ver1;
 
+import PageTests.BasePage;
+import PageTests.DriverScript;
+
 /**
  * Hello world!
  *
  */
-public class App 
+public class App extends DriverScript
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) throws Exception
     {
-        System.out.println( "Hello World!" );
+    	DriverScript ds=new DriverScript();
+    	ds.start();
     }
 }

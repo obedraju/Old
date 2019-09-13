@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="key2" value="Pragna"/>
+  <parameter name="key" value="Divya"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="PageTests.DriverScript">
         <methods>
+          <include name="startReport"/>
           <include name="HomeViewAllApps"/>
+          <include name="endReport"/>
           <include name="LogoutAuthentication"/>
           <include name="LoginAuthentication"/>
           <include name="startUp"/>
+          <include name="getResult"/>
           <include name="cleanUp"/>
           <include name="HomeLogoTest"/>
           <include name="UserDetails"/>

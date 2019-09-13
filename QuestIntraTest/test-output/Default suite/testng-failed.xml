@@ -3,11 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Utility.PropertyFile">
+      <class name="PageTests.DriverScript">
         <methods>
-          <include name="LoadProperty"/>
+          <include name="startReport"/>
+          <include name="HomeViewAllApps"/>
+          <include name="endReport"/>
+          <include name="LogoutAuthentication"/>
+          <include name="LoginAuthentication"/>
+          <include name="startUp"/>
+          <include name="getResult"/>
+          <include name="cleanUp"/>
+          <include name="HomeLogoTest"/>
+          <include name="UserDetails"/>
         </methods>
-      </class> <!-- Utility.PropertyFile -->
+      </class> <!-- PageTests.DriverScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
