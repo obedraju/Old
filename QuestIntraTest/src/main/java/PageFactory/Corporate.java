@@ -48,7 +48,6 @@ public class Corporate
 	
 	{
 		
-		
 	CorporateBtn.click();
 	DeliveryLocBtn.click(); 
 	IndiaBtn.click();

@@ -118,6 +118,8 @@ public class DriverScript extends BasePage{
 		logger.log(Status.PASS, MarkupHelper.createLabel("Clicking ViewAll Sucessfull", ExtentColor.GREEN));
 		ExcelUtil xl=new ExcelUtil();
 		xl.xlWriteData("HomeViewAllApps");
+		
+		
 	} 
 		
 		
