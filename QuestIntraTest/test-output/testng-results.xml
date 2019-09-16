@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
+<testng-results skipped="0" failed="2" ignored="0" total="6" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="64039" started-at="2019-09-16T11:23:34Z" finished-at="2019-09-16T11:24:38Z">
+  <suite name="Suite" duration-ms="4015141" started-at="2019-09-16T10:51:06Z" finished-at="2019-09-16T11:58:01Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="64039" started-at="2019-09-16T11:23:34Z" finished-at="2019-09-16T11:24:38Z">
+    <test name="Test" duration-ms="4015141" started-at="2019-09-16T10:51:06Z" finished-at="2019-09-16T11:58:01Z">
       <class name="PageTests.DriverScript">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="startUp" is-config="true" duration-ms="4565" started-at="2019-09-16T11:23:29Z" finished-at="2019-09-16T11:23:34Z">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="startUp" is-config="true" duration-ms="4693" started-at="2019-09-16T10:51:01Z" finished-at="2019-09-16T10:51:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="startReport()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="startReport" is-config="true" duration-ms="78" started-at="2019-09-16T11:23:34Z" finished-at="2019-09-16T11:23:34Z">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="startReport" is-config="true" duration-ms="82" started-at="2019-09-16T10:51:06Z" finished-at="2019-09-16T10:51:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="LoginAuthentication()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="LoginAuthentication" duration-ms="7062" started-at="2019-09-16T11:23:34Z" finished-at="2019-09-16T11:23:41Z">
+        <test-method status="PASS" signature="LoginAuthentication()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="LoginAuthentication" duration-ms="4795" started-at="2019-09-16T10:51:06Z" finished-at="2019-09-16T10:51:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginAuthentication -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@14bf9759]" name="getResult" is-config="true" duration-ms="2" started-at="2019-09-16T11:23:41Z" finished-at="2019-09-16T11:23:41Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@14bf9759]" name="getResult" is-config="true" duration-ms="5" started-at="2019-09-16T10:51:11Z" finished-at="2019-09-16T10:51:11Z">
           <params>
             <param index="0">
               <value>
@@ -30,11 +30,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="HomeViewAllApps()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="HomeViewAllApps" duration-ms="3998" started-at="2019-09-16T11:23:41Z" depends-on-methods="PageTests.DriverScript.LoginAuthentication" finished-at="2019-09-16T11:23:45Z">
+        <test-method status="PASS" signature="HomeViewAllApps()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="HomeViewAllApps" duration-ms="3102" started-at="2019-09-16T10:51:11Z" depends-on-methods="PageTests.DriverScript.LoginAuthentication" finished-at="2019-09-16T10:51:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomeViewAllApps -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@14bf9759]" name="getResult" is-config="true" duration-ms="1" started-at="2019-09-16T11:23:45Z" finished-at="2019-09-16T11:23:45Z">
+        <test-method status="PASS" signature="HomeLogoTest()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="HomeLogoTest" duration-ms="3259" started-at="2019-09-16T10:51:14Z" depends-on-methods="PageTests.DriverScript.HomeViewAllApps" finished-at="2019-09-16T10:51:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomeLogoTest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@14bf9759]" name="getResult" is-config="true" duration-ms="0" started-at="2019-09-16T10:51:14Z" finished-at="2019-09-16T10:51:14Z">
           <params>
             <param index="0">
               <value>
@@ -45,11 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="HomeLogoTest()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="HomeLogoTest" duration-ms="4107" started-at="2019-09-16T11:23:45Z" depends-on-methods="PageTests.DriverScript.HomeViewAllApps" finished-at="2019-09-16T11:23:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomeLogoTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@14bf9759]" name="getResult" is-config="true" duration-ms="0" started-at="2019-09-16T11:23:49Z" finished-at="2019-09-16T11:23:49Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@14bf9759]" name="getResult" is-config="true" duration-ms="0" started-at="2019-09-16T10:51:17Z" finished-at="2019-09-16T10:51:17Z">
           <params>
             <param index="0">
               <value>
@@ -60,11 +60,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="UserDetails()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="UserDetails" duration-ms="4655" started-at="2019-09-16T11:23:49Z" depends-on-methods="PageTests.DriverScript.HomeLogoTest" finished-at="2019-09-16T11:23:54Z">
+        <test-method status="PASS" signature="UserDetails()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="UserDetails" duration-ms="3372" started-at="2019-09-16T10:51:17Z" depends-on-methods="PageTests.DriverScript.HomeLogoTest" finished-at="2019-09-16T10:51:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserDetails -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@14bf9759]" name="getResult" is-config="true" duration-ms="1" started-at="2019-09-16T11:23:54Z" finished-at="2019-09-16T11:23:54Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@14bf9759]" name="getResult" is-config="true" duration-ms="0" started-at="2019-09-16T10:51:20Z" finished-at="2019-09-16T10:51:20Z">
           <params>
             <param index="0">
               <value>
@@ -75,35 +75,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="FAIL" signature="IPMS_()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="IPMS_" duration-ms="33113" started-at="2019-09-16T11:23:54Z" depends-on-methods="PageTests.DriverScript.UserDetails" finished-at="2019-09-16T11:24:27Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="IPMS_()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="IPMS_" duration-ms="4000333" started-at="2019-09-16T10:51:20Z" depends-on-methods="PageTests.DriverScript.UserDetails" finished-at="2019-09-16T11:58:01Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="form"]/div[6]/div/div[1]/span/a"}
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=76.0.3809.132)
   (Driver info: chromedriver=2.44.609545 (c2f88692e98ce7233d2df7c724465ecacfe74df5),platform=Mac OS X 10.14.5 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T20:55:26'
 System info: host: 'EXIHYD-IM-033', ip: 'fe80:0:0:0:6f:40c6:608:8506%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '1.8.0_131'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/nf/sf8gvzfx0x5...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52509}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 76.0.3809.132, webStorageEnabled: true}
-Session ID: 20d3e5b433cced8efb63902db6c6b85f
-*** Element info: {Using=xpath, value=//*[@id="form"]/div[6]/div/div[1]/span/a}]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/nf/sf8gvzfx0x5...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58654}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 76.0.3809.132, webStorageEnabled: true}
+Session ID: 905a875b3b22d4472ca6693f9f00f0db
+*** Element info: {Using=xpath, value=//*[@id="form"]/div[6]/div/div[1]/span/a/span}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="form"]/div[6]/div/div[1]/span/a"}
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=76.0.3809.132)
   (Driver info: chromedriver=2.44.609545 (c2f88692e98ce7233d2df7c724465ecacfe74df5),platform=Mac OS X 10.14.5 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T20:55:26'
 System info: host: 'EXIHYD-IM-033', ip: 'fe80:0:0:0:6f:40c6:608:8506%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '1.8.0_131'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/nf/sf8gvzfx0x5...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52509}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 76.0.3809.132, webStorageEnabled: true}
-Session ID: 20d3e5b433cced8efb63902db6c6b85f
-*** Element info: {Using=xpath, value=//*[@id="form"]/div[6]/div/div[1]/span/a}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/nf/sf8gvzfx0x5...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58654}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 76.0.3809.132, webStorageEnabled: true}
+Session ID: 905a875b3b22d4472ca6693f9f00f0db
+*** Element info: {Using=xpath, value=//*[@id="form"]/div[6]/div/div[1]/span/a/span}
+at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
@@ -120,8 +119,14 @@ at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy12.click(Unknown Source)
-at PageFactory.IPMS.impsLoginLink(IPMS.java:40)
+at com.sun.proxy.$Proxy12.toString(Unknown Source)
+at java.lang.String.valueOf(String.java:2994)
+at java.lang.StringBuilder.append(StringBuilder.java:131)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:305)
+at java.lang.String.valueOf(String.java:2994)
+at java.lang.StringBuilder.append(StringBuilder.java:131)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at PageFactory.IPMS.impsLoginLink(IPMS.java:35)
 at PageTests.DriverScript.IPMS_(DriverScript.java:129)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -150,11 +155,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IPMS_ -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@14bf9759]" name="getResult" is-config="true" duration-ms="1" started-at="2019-09-16T11:24:27Z" finished-at="2019-09-16T11:24:27Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@14bf9759]" name="getResult" is-config="true" duration-ms="0" started-at="2019-09-16T11:58:01Z" finished-at="2019-09-16T11:58:01Z">
           <params>
             <param index="0">
               <value>
@@ -165,26 +170,100 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="LogoutAuthentication()[pri:1, instance:PageTests.DriverScript@14bf9759]" name="LogoutAuthentication" duration-ms="10765" started-at="2019-09-16T11:24:27Z" finished-at="2019-09-16T11:24:38Z">
+        <test-method status="FAIL" signature="LogoutAuthentication()[pri:1, instance:PageTests.DriverScript@14bf9759]" name="LogoutAuthentication" duration-ms="3" started-at="2019-09-16T11:58:01Z" finished-at="2019-09-16T11:58:01Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=76.0.3809.132)
+  (Driver info: chromedriver=2.44.609545 (c2f88692e98ce7233d2df7c724465ecacfe74df5),platform=Mac OS X 10.14.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T20:55:26'
+System info: host: 'EXIHYD-IM-033', ip: 'fe80:0:0:0:6f:40c6:608:8506%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/nf/sf8gvzfx0x5...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58654}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 76.0.3809.132, webStorageEnabled: true}
+Session ID: 905a875b3b22d4472ca6693f9f00f0db
+*** Element info: {Using=xpath, value=//div[@class="username place-left"]/a}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=76.0.3809.132)
+  (Driver info: chromedriver=2.44.609545 (c2f88692e98ce7233d2df7c724465ecacfe74df5),platform=Mac OS X 10.14.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T20:55:26'
+System info: host: 'EXIHYD-IM-033', ip: 'fe80:0:0:0:6f:40c6:608:8506%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/nf/sf8gvzfx0x5...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58654}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 76.0.3809.132, webStorageEnabled: true}
+Session ID: 905a875b3b22d4472ca6693f9f00f0db
+*** Element info: {Using=xpath, value=//div[@class="username place-left"]/a}
+at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.codec.jwp.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:41)
+at org.openqa.selenium.remote.codec.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:83)
+at org.openqa.selenium.remote.codec.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:47)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy12.getText(Unknown Source)
+at PageFactory.QuestIntraHomeLogin.printUser(QuestIntraHomeLogin.java:65)
+at PageTests.DriverScript.LogoutAuthentication(DriverScript.java:102)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogoutAuthentication -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@14bf9759]" name="getResult" is-config="true" duration-ms="1" started-at="2019-09-16T11:24:38Z" finished-at="2019-09-16T11:24:38Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@14bf9759]" name="getResult" is-config="true" duration-ms="0" started-at="2019-09-16T11:58:01Z" finished-at="2019-09-16T11:58:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LogoutAuthentication status=SUCCESS method=DriverScript.LogoutAuthentication()[pri:1, instance:PageTests.DriverScript@14bf9759] output={null}]]]>
+                <![CDATA[[TestResult name=LogoutAuthentication status=FAILURE method=DriverScript.LogoutAuthentication()[pri:1, instance:PageTests.DriverScript@14bf9759] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="endReport" is-config="true" duration-ms="231" started-at="2019-09-16T11:24:38Z" finished-at="2019-09-16T11:24:38Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="endReport" is-config="true" duration-ms="161" started-at="2019-09-16T11:58:01Z" finished-at="2019-09-16T11:58:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="cleanUp" is-config="true" duration-ms="149" started-at="2019-09-16T11:24:38Z" finished-at="2019-09-16T11:24:38Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="cleanUp" is-config="true" duration-ms="327" started-at="2019-09-16T11:58:01Z" finished-at="2019-09-16T11:58:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->

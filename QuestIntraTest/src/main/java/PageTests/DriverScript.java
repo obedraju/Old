@@ -19,6 +19,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import PageFactory.Corporate;
 import PageFactory.EmpProfile;
 import PageFactory.IPMS;
 import PageFactory.LogoTest;
@@ -118,6 +119,8 @@ public class DriverScript extends BasePage{
 		logger.log(Status.PASS, MarkupHelper.createLabel("Clicking ViewAll Sucessfull", ExtentColor.GREEN));
 		ExcelUtil xl=new ExcelUtil();
 		xl.xlWriteData("HomeViewAllApps");
+		
+		
 	} 
 		
 		
@@ -156,9 +159,18 @@ public void UserDetails() throws Exception
 	logger.log(Status.PASS, MarkupHelper.createLabel("Internal Data Test Sucessfull", ExtentColor.GREEN));
 	ExcelUtil xl=new ExcelUtil();
 	xl.xlWriteData("UserDetails");
+	
 }
+	
+	
+	@Test(dependsOnMethods= {"UserDetails"})
+	public void corporate_() throws Exception
+	{			
+		Corporate obj=PageFactory.initElements(driver, Corporate.class);
+		obj.Clickable();
 
 
 
+}
 
 }
