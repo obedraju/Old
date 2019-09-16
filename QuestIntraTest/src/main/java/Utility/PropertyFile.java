@@ -16,8 +16,10 @@ import org.testng.annotations.Test;
 		FileReader fr=new FileReader(path);
 		Properties p=new Properties();
 		p.load(fr);
+		System.out.print("");
 		
 		return p.getProperty(key);
+		
 	}
 }
 
