@@ -67,7 +67,7 @@ public class ExcelUtil {
 					
 				Row row = sheet.getRow(x);			 
 				Cell cell = row.createCell(2);			 
-				cell.setCellValue("Ok from P");
+				cell.setCellValue("Pass");
 				
 				
 				cell = row.createCell(3);			 
