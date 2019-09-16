@@ -67,7 +67,7 @@ public class ExcelUtil {
 					
 				Row row = sheet.getRow(x);			 
 				Cell cell = row.createCell(2);			 
-				cell.setCellValue("Run");
+				cell.setCellValue("DONE");
 				
 				
 				cell = row.createCell(3);			 
