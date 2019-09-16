@@ -12,7 +12,8 @@ import org.testng.annotations.Test;
 	public String LoadProperty(String key) throws Exception
 	
 	{
-		FileReader fr=new FileReader("/Users/g.obedraju/git/master/QuestIntraTest/PropertyFile/ProFile.properties");
+		String path="./PropertyFile/ProFile.properties";
+		FileReader fr=new FileReader(path);
 		Properties p=new Properties();
 		p.load(fr);
 		
