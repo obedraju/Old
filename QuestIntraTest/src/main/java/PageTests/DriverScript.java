@@ -20,6 +20,7 @@ import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import PageFactory.EmpProfile;
+import PageFactory.IPMS;
 import PageFactory.LogoTest;
 import PageFactory.QuestHome;
 import PageFactory.QuestIntraHomeLogin;
@@ -120,7 +121,15 @@ public class DriverScript extends BasePage{
 	} 
 		
 		
-		
+		@Test(dependsOnMethods= {"UserDetails"})
+		public void IPMS_() throws InterruptedException
+		{
+			IPMS obj=PageFactory.initElements(driver, IPMS.class);
+			obj.ipmsClick();
+			obj.impsLoginLink();
+			obj.ipmsLoginCredentials();
+			
+		}
 	
 	
 	@Test(dependsOnMethods = {"HomeViewAllApps" })

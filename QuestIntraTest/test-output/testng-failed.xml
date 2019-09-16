@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <parameter name="key2" value="Pragna"/>
   <parameter name="key" value="Divya"/>
@@ -10,7 +10,7 @@
           <include name="startReport"/>
           <include name="HomeViewAllApps"/>
           <include name="endReport"/>
-          <include name="LogoutAuthentication"/>
+          <include name="IPMS_"/>
           <include name="LoginAuthentication"/>
           <include name="startUp"/>
           <include name="getResult"/>
