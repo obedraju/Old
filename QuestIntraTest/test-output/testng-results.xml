@@ -1,100 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="19221" started-at="2019-09-16T07:49:28Z" finished-at="2019-09-16T07:49:47Z">
+  <suite name="Suite" duration-ms="46271" started-at="2019-09-16T03:56:19 PDT" finished-at="2019-09-16T03:57:05 PDT">
     <groups>
     </groups>
-    <test name="Test" duration-ms="19221" started-at="2019-09-16T07:49:28Z" finished-at="2019-09-16T07:49:47Z">
+    <test name="Test" duration-ms="46271" started-at="2019-09-16T03:56:19 PDT" finished-at="2019-09-16T03:57:05 PDT">
       <class name="PageTests.DriverScript">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="startUp" is-config="true" duration-ms="3958" started-at="2019-09-16T07:49:24Z" finished-at="2019-09-16T07:49:28Z">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:PageTests.DriverScript@2d6eabae]" name="startUp" is-config="true" duration-ms="4155" started-at="2019-09-16T03:56:15 PDT" finished-at="2019-09-16T03:56:19 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="startReport()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="startReport" is-config="true" duration-ms="82" started-at="2019-09-16T07:49:28Z" finished-at="2019-09-16T07:49:28Z">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:PageTests.DriverScript@2d6eabae]" name="startReport" is-config="true" duration-ms="66" started-at="2019-09-16T03:56:19 PDT" finished-at="2019-09-16T03:56:19 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="LoginAuthentication()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="LoginAuthentication" duration-ms="5032" started-at="2019-09-16T07:49:28Z" finished-at="2019-09-16T07:49:33Z">
+        <test-method status="PASS" signature="LoginAuthentication()[pri:0, instance:PageTests.DriverScript@2d6eabae]" name="LoginAuthentication" duration-ms="4867" started-at="2019-09-16T03:56:19 PDT" finished-at="2019-09-16T03:56:24 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginAuthentication -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@14bf9759]" name="getResult" is-config="true" duration-ms="1" started-at="2019-09-16T07:49:33Z" finished-at="2019-09-16T07:49:33Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@2d6eabae]" name="getResult" is-config="true" duration-ms="5" started-at="2019-09-16T03:56:24 PDT" finished-at="2019-09-16T03:56:24 PDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginAuthentication status=SUCCESS method=DriverScript.LoginAuthentication()[pri:0, instance:PageTests.DriverScript@14bf9759] output={null}]]]>
+                <![CDATA[[TestResult name=LoginAuthentication status=SUCCESS method=DriverScript.LoginAuthentication()[pri:0, instance:PageTests.DriverScript@2d6eabae] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="HomeViewAllApps()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="HomeViewAllApps" duration-ms="3119" started-at="2019-09-16T07:49:33Z" depends-on-methods="PageTests.DriverScript.LoginAuthentication" finished-at="2019-09-16T07:49:36Z">
+        <test-method status="PASS" signature="HomeViewAllApps()[pri:0, instance:PageTests.DriverScript@2d6eabae]" name="HomeViewAllApps" duration-ms="4039" started-at="2019-09-16T03:56:24 PDT" depends-on-methods="PageTests.DriverScript.LoginAuthentication" finished-at="2019-09-16T03:56:28 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomeViewAllApps -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@14bf9759]" name="getResult" is-config="true" duration-ms="0" started-at="2019-09-16T07:49:36Z" finished-at="2019-09-16T07:49:36Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@2d6eabae]" name="getResult" is-config="true" duration-ms="1" started-at="2019-09-16T03:56:28 PDT" finished-at="2019-09-16T03:56:28 PDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=HomeViewAllApps status=SUCCESS method=DriverScript.HomeViewAllApps()[pri:0, instance:PageTests.DriverScript@14bf9759] output={null}]]]>
+                <![CDATA[[TestResult name=HomeViewAllApps status=SUCCESS method=DriverScript.HomeViewAllApps()[pri:0, instance:PageTests.DriverScript@2d6eabae] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="HomeLogoTest()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="HomeLogoTest" duration-ms="3327" started-at="2019-09-16T07:49:36Z" depends-on-methods="PageTests.DriverScript.HomeViewAllApps" finished-at="2019-09-16T07:49:39Z">
+        <test-method status="PASS" signature="HomeLogoTest()[pri:0, instance:PageTests.DriverScript@2d6eabae]" name="HomeLogoTest" duration-ms="3507" started-at="2019-09-16T03:56:28 PDT" depends-on-methods="PageTests.DriverScript.HomeViewAllApps" finished-at="2019-09-16T03:56:31 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomeLogoTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@14bf9759]" name="getResult" is-config="true" duration-ms="0" started-at="2019-09-16T07:49:39Z" finished-at="2019-09-16T07:49:39Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@2d6eabae]" name="getResult" is-config="true" duration-ms="1" started-at="2019-09-16T03:56:31 PDT" finished-at="2019-09-16T03:56:31 PDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=HomeLogoTest status=SUCCESS method=DriverScript.HomeLogoTest()[pri:0, instance:PageTests.DriverScript@14bf9759] output={null}]]]>
+                <![CDATA[[TestResult name=HomeLogoTest status=SUCCESS method=DriverScript.HomeLogoTest()[pri:0, instance:PageTests.DriverScript@2d6eabae] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="UserDetails()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="UserDetails" duration-ms="3729" started-at="2019-09-16T07:49:39Z" depends-on-methods="PageTests.DriverScript.HomeLogoTest" finished-at="2019-09-16T07:49:43Z">
+        <test-method status="PASS" signature="UserDetails()[pri:0, instance:PageTests.DriverScript@2d6eabae]" name="UserDetails" duration-ms="5447" started-at="2019-09-16T03:56:31 PDT" depends-on-methods="PageTests.DriverScript.HomeLogoTest" finished-at="2019-09-16T03:56:37 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserDetails -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@14bf9759]" name="getResult" is-config="true" duration-ms="1" started-at="2019-09-16T07:49:43Z" finished-at="2019-09-16T07:49:43Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@2d6eabae]" name="getResult" is-config="true" duration-ms="0" started-at="2019-09-16T03:56:37 PDT" finished-at="2019-09-16T03:56:37 PDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserDetails status=SUCCESS method=DriverScript.UserDetails()[pri:0, instance:PageTests.DriverScript@14bf9759] output={null}]]]>
+                <![CDATA[[TestResult name=UserDetails status=SUCCESS method=DriverScript.UserDetails()[pri:0, instance:PageTests.DriverScript@2d6eabae] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="LogoutAuthentication()[pri:1, instance:PageTests.DriverScript@14bf9759]" name="LogoutAuthentication" duration-ms="3683" started-at="2019-09-16T07:49:43Z" finished-at="2019-09-16T07:49:47Z">
+        <test-method status="PASS" signature="corporate_()[pri:0, instance:PageTests.DriverScript@2d6eabae]" name="corporate_" duration-ms="24697" started-at="2019-09-16T03:56:37 PDT" depends-on-methods="PageTests.DriverScript.UserDetails" finished-at="2019-09-16T03:57:01 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- corporate_ -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@2d6eabae]" name="getResult" is-config="true" duration-ms="0" started-at="2019-09-16T03:57:01 PDT" finished-at="2019-09-16T03:57:01 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=corporate_ status=SUCCESS method=DriverScript.corporate_()[pri:0, instance:PageTests.DriverScript@2d6eabae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="LogoutAuthentication()[pri:1, instance:PageTests.DriverScript@2d6eabae]" name="LogoutAuthentication" duration-ms="3401" started-at="2019-09-16T03:57:01 PDT" finished-at="2019-09-16T03:57:05 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogoutAuthentication -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@14bf9759]" name="getResult" is-config="true" duration-ms="0" started-at="2019-09-16T07:49:47Z" finished-at="2019-09-16T07:49:47Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTests.DriverScript@2d6eabae]" name="getResult" is-config="true" duration-ms="0" started-at="2019-09-16T03:57:05 PDT" finished-at="2019-09-16T03:57:05 PDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LogoutAuthentication status=SUCCESS method=DriverScript.LogoutAuthentication()[pri:1, instance:PageTests.DriverScript@14bf9759] output={null}]]]>
+                <![CDATA[[TestResult name=LogoutAuthentication status=SUCCESS method=DriverScript.LogoutAuthentication()[pri:1, instance:PageTests.DriverScript@2d6eabae] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="endReport" is-config="true" duration-ms="224" started-at="2019-09-16T07:49:47Z" finished-at="2019-09-16T07:49:47Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:PageTests.DriverScript@2d6eabae]" name="endReport" is-config="true" duration-ms="207" started-at="2019-09-16T03:57:05 PDT" finished-at="2019-09-16T03:57:05 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:PageTests.DriverScript@14bf9759]" name="cleanUp" is-config="true" duration-ms="130" started-at="2019-09-16T07:49:47Z" finished-at="2019-09-16T07:49:47Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:PageTests.DriverScript@2d6eabae]" name="cleanUp" is-config="true" duration-ms="178" started-at="2019-09-16T03:57:05 PDT" finished-at="2019-09-16T03:57:05 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->

@@ -21,6 +21,7 @@ public class QuestHome {
 	
 	public void viewAllBtn()
 	{
+		
 		viewAll.click();
 		System.out.println("ViewAll Home Page Btn clicked successfully!");
 		
