@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,26 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="PageTests.DriverScript" hash-for-method="IPMS_">IPMS_</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="PageTests.DriverScript" hash-for-method="LogoutAuthentication">LogoutAuthentication</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -136,7 +117,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="PageTests.DriverScript" hash-for-method="LogoutAuthentication">LogoutAuthentication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="PageTests.DriverScript" hash-for-method="UserDetails">UserDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="PageTests.DriverScript" hash-for-method="corporate_">corporate_</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -151,94 +142,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">PageTests.DriverScript</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="IPMS_">
-                  </a> <!-- IPMS_ -->
-                  <span class="method-name">IPMS_</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=76.0.3809.132)
-  (Driver info: chromedriver=2.44.609545 (c2f88692e98ce7233d2df7c724465ecacfe74df5),platform=Mac OS X 10.14.5 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;4.0.0-alpha-2&apos;, revision: &apos;f148142cf8&apos;, time: &apos;2019-07-01T20:55:26&apos;
-System info: host: &apos;EXIHYD-IM-033&apos;, ip: &apos;fe80:0:0:0:6f:40c6:608:8506%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/nf/sf8gvzfx0x5...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58654}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 76.0.3809.132, webStorageEnabled: true}
-Session ID: 905a875b3b22d4472ca6693f9f00f0db
-*** Element info: {Using=xpath, value=//*[@id=&quot;form&quot;]/div[6]/div/div[1]/span/a/span}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.codec.jwp.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:41)
-	at org.openqa.selenium.remote.codec.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:83)
-	at org.openqa.selenium.remote.codec.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:47)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy12.toString(Unknown Source)
-	at java.lang.String.valueOf(String.java:2994)
-	at java.lang.StringBuilder.append(StringBuilder.java:131)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:305)
-	at java.lang.String.valueOf(String.java:2994)
-	at java.lang.StringBuilder.append(StringBuilder.java:131)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at PageFactory.IPMS.impsLoginLink(IPMS.java:35)
-	at PageTests.DriverScript.IPMS_(DriverScript.java:129)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="LogoutAuthentication">
-                  </a> <!-- LogoutAuthentication -->
-                  <span class="method-name">LogoutAuthentication</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=76.0.3809.132)
-  (Driver info: chromedriver=2.44.609545 (c2f88692e98ce7233d2df7c724465ecacfe74df5),platform=Mac OS X 10.14.5 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;4.0.0-alpha-2&apos;, revision: &apos;f148142cf8&apos;, time: &apos;2019-07-01T20:55:26&apos;
-System info: host: &apos;EXIHYD-IM-033&apos;, ip: &apos;fe80:0:0:0:6f:40c6:608:8506%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/nf/sf8gvzfx0x5...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58654}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 76.0.3809.132, webStorageEnabled: true}
-Session ID: 905a875b3b22d4472ca6693f9f00f0db
-*** Element info: {Using=xpath, value=//div[@class=&quot;username place-left&quot;]/a}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.codec.jwp.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:41)
-	at org.openqa.selenium.remote.codec.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:83)
-	at org.openqa.selenium.remote.codec.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:47)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy12.getText(Unknown Source)
-	at PageFactory.QuestIntraHomeLogin.printUser(QuestIntraHomeLogin.java:65)
-	at PageTests.DriverScript.LogoutAuthentication(DriverScript.java:102)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -268,9 +171,23 @@ Session ID: 905a875b3b22d4472ca6693f9f00f0db
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="LogoutAuthentication">
+                  </a> <!-- LogoutAuthentication -->
+                  <span class="method-name">LogoutAuthentication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="UserDetails">
                   </a> <!-- UserDetails -->
                   <span class="method-name">UserDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="corporate_">
+                  </a> <!-- corporate_ -->
+                  <span class="method-name">corporate_</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -331,34 +248,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'IPMS_')
+data.setCell(0, 1, 'corporate_')
 data.setCell(0, 2, 'PageTests.DriverScript')
-data.setCell(0, 3, 4000333);
+data.setCell(0, 3, 16800);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'LoginAuthentication')
 data.setCell(1, 2, 'PageTests.DriverScript')
-data.setCell(1, 3, 4795);
+data.setCell(1, 3, 4448);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'UserDetails')
+data.setCell(2, 1, 'LogoutAuthentication')
 data.setCell(2, 2, 'PageTests.DriverScript')
-data.setCell(2, 3, 3372);
+data.setCell(2, 3, 3889);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'HomeLogoTest')
+data.setCell(3, 1, 'UserDetails')
 data.setCell(3, 2, 'PageTests.DriverScript')
-data.setCell(3, 3, 3259);
+data.setCell(3, 3, 3881);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'HomeViewAllApps')
+data.setCell(4, 1, 'HomeLogoTest')
 data.setCell(4, 2, 'PageTests.DriverScript')
-data.setCell(4, 3, 3102);
+data.setCell(4, 3, 3256);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'LogoutAuthentication')
+data.setCell(5, 1, 'HomeViewAllApps')
 data.setCell(5, 2, 'PageTests.DriverScript')
-data.setCell(5, 3, 3);
+data.setCell(5, 3, 2711);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 hours</span>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -391,67 +308,63 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">startReport</span>
-                <span class="method-start">4695 ms</span>
+                <span class="method-start">4180 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">LoginAuthentication</span>
-                <span class="method-start">4785 ms</span>
+                <span class="method-start">4273 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=LoginAuthentication status=SUCCESS method=DriverScript.LoginAuthentication()[pri:0,...)</span>
-                <span class="method-start">9586 ms</span>
+                <span class="method-start">8731 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">HomeViewAllApps</span>
-                <span class="method-start">9593 ms</span>
+                <span class="method-start">8735 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=HomeViewAllApps status=SUCCESS method=DriverScript.HomeViewAllApps()[pri:0, instanc...)</span>
-                <span class="method-start">12697 ms</span>
+                <span class="method-start">11448 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">HomeLogoTest</span>
-                <span class="method-start">12697 ms</span>
+                <span class="method-start">11449 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=HomeLogoTest status=SUCCESS method=DriverScript.HomeLogoTest()[pri:0, instance:Page...)</span>
-                <span class="method-start">15957 ms</span>
+                <span class="method-start">14707 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">UserDetails</span>
-                <span class="method-start">15958 ms</span>
+                <span class="method-start">14708 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=UserDetails status=SUCCESS method=DriverScript.UserDetails()[pri:0, instance:PageTe...)</span>
-                <span class="method-start">19331 ms</span>
+                <span class="method-start">18590 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">IPMS_</span>
-                <span class="method-start">19332 ms</span>
+                <span class="method-name">corporate_</span>
+                <span class="method-start">18591 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=IPMS_ status=FAILURE method=DriverScript.IPMS_()[pri:0, instance:PageTests.DriverSc...)</span>
-                <span class="method-start">4019668 ms</span>
+                <span class="method-name">getResult([TestResult name=corporate_ status=SUCCESS method=DriverScript.corporate_()[pri:0, instance:PageTest...)</span>
+                <span class="method-start">35392 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">LogoutAuthentication</span>
-                <span class="method-start">4019669 ms</span>
+                <span class="method-start">35392 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=LogoutAuthentication status=FAILURE method=DriverScript.LogoutAuthentication()[pri:...)</span>
-                <span class="method-start">4019673 ms</span>
+                <span class="method-name">getResult([TestResult name=LogoutAuthentication status=SUCCESS method=DriverScript.LogoutAuthentication()[pri:...)</span>
+                <span class="method-start">39282 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">4019674 ms</span>
+                <span class="method-start">39282 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">cleanUp</span>
-                <span class="method-start">4019857 ms</span>
+                <span class="method-start">39487 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
