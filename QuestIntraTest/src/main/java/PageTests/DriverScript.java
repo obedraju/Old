@@ -129,7 +129,7 @@ public class DriverScript extends BasePage{
 	} 
 		
 		
-		//@Test(dependsOnMethods= {"corporate_"})
+		//@Test(dependsOnMethods= {"corporate_"}) ********** yet to be implemented
 		public void IPMS_() throws InterruptedException
 		{
 			IPMS obj=PageFactory.initElements(driver, IPMS.class);
