@@ -1,6 +1,7 @@
 package PageTests;
 
 import java.io.IOException;
+import java.util.Date;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.ITestResult;
@@ -40,7 +41,11 @@ public class DriverScript extends BasePage{
 	@BeforeTest
 	 public void startReport(){
 	 
-	String path="./ExtentReportOutput/Report.html";
+	String path="./ExtentReportOutput/Report_";	
+	Date d1=new Date();
+	path=path+d1.toString()+".html";
+	
+	
 	 htmlReporter = new ExtentHtmlReporter(path);
 	 extent = new ExtentReports ();
 	 extent.attachReporter(htmlReporter);
@@ -124,7 +129,7 @@ public class DriverScript extends BasePage{
 	} 
 		
 		
-		@Test(dependsOnMethods= {"UserDetails"})
+		//@Test(dependsOnMethods= {"corporate_"})
 		public void IPMS_() throws InterruptedException
 		{
 			IPMS obj=PageFactory.initElements(driver, IPMS.class);

@@ -11,8 +11,8 @@
           <include name="HomeViewAllApps"/>
           <include name="endReport"/>
           <include name="LogoutAuthentication"/>
-          <include name="IPMS_"/>
           <include name="LoginAuthentication"/>
+          <include name="corporate_"/>
           <include name="startUp"/>
           <include name="getResult"/>
           <include name="cleanUp"/>
